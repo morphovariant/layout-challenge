@@ -16,9 +16,10 @@ main {
 .container-fluid {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding: 0;
 }
 
-header, footer, article {
+header, footer, section {
 	padding: 1em;
 }
 
@@ -47,7 +48,7 @@ nav a:link, nav a:visited, nav a:active {
 	color: #55E;
 }
 
-a:hover, input:focus {
+nav a:hover, nav input:focus {
 	color: #00E;
 }
 
@@ -118,9 +119,14 @@ a:hover, input:focus {
 	}
 
 	header p {
+		display: inline;
 		font-size: 120%;
 		color: #EEEEEE;
 		margin: 0;
+	}
+
+	header {
+		position: relative;
 	}
 
 	nav {
